@@ -28,3 +28,14 @@ systemctl status sshd
 
 ![Компьютер С](https://github.com/verkalacheva/vukha_devops_lab_1/assets/112976826/bd7c207d-dfc5-4298-94e9-5e7c4d22c9bd)
 
+Для того, чтобы исключить блокировку входящих подключений брандмауэром, отключим его. В терминалах компьютеров Б и С введем команду:
+```
+sudo ufw disable
+```
+Далее нужно узнать IP-адреса компьютеров Б и С. Для этого введем команду:
+```
+ip a
+```
+**Компьютер Б**
+
+![Компьютер Б](https://github.com/verkalacheva/vukha_devops_lab_1/assets/112976826/50d44d61-f29b-4159-aa00-00fe3e689dcb)
