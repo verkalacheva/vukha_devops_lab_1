@@ -10,11 +10,11 @@ sudo apt install openssh-server
 ```
 - **Компьютер Б**
 
-![Компьютер Б](https://github.com/verkalacheva/vukha_devops_lab_1/assets/112976826/aa78acf3-120b-4966-93f8-a165a41e13f7)
+<image src="/images/1.png" alt="Компьютер Б">
 
 - **Компьютер С**
 
-![Компьютер С](https://github.com/verkalacheva/vukha_devops_lab_1/assets/112976826/90d40c36-71c4-421a-917e-13abfafadba0)
+<image src="/images/2.jpeg" alt="Компьютер C">
 
 Убедимся, что служба запущена. Вводим команду:
 ```
@@ -22,11 +22,11 @@ systemctl status sshd
 ```
 - **Компьютер Б**
 
-![Компьютер Б](https://github.com/verkalacheva/vukha_devops_lab_1/assets/112976826/ce1d3713-cf4c-40d7-ac8a-37edfa32223c)
+<image src="/images/3.png" alt="Компьютер Б">
 
 - **Компьютер С**
 
-![Компьютер С](https://github.com/verkalacheva/vukha_devops_lab_1/assets/112976826/bd7c207d-dfc5-4298-94e9-5e7c4d22c9bd)
+<image src="/images/4.jpeg" alt="Компьютер C">
 
 Для того, чтобы исключить блокировку входящих подключений брандмауэром, отключим его. В терминалах компьютеров Б и С введем команду:
 ```
@@ -38,14 +38,14 @@ ip a
 ```
 - **Компьютер Б**
 
-![Компьютер Б](https://github.com/verkalacheva/vukha_devops_lab_1/assets/112976826/50d44d61-f29b-4159-aa00-00fe3e689dcb)
+<image src="/images/5.png" alt="Компьютер Б">
 
 ### 2. Перенос файла между серверами
 - **Файл dog.txt**
 
 Создадим на компьютере Б файл dog.txt. Который и будем отправлять на компьютер С.
 
-![Файл dog.txt на компьютере Б](https://github.com/verkalacheva/vukha_devops_lab_1/assets/113009175/ef7251a9-29d6-493d-848b-ee0ae4bf7847)
+<image src="/images/6.png" alt="Компьютер Б">
 
 - **Копирование файла с компьютера Б на компьютер А**
 
@@ -55,7 +55,7 @@ scp {имя сервера}@{ip-адрес сервера}:{расположен
 ```
 таким образом копируем файл с сервера(компьютера Б) на компьютер А.
 
-![Копирование файла с сервера Б](https://github.com/verkalacheva/vukha_devops_lab_1/assets/113009175/bab64690-03da-425b-9bc4-45a5c6c47b91)
+<image src="/images/7.jpeg" alt="Компьютер A">
 
 - **Копирование файла с компьютера А на компьютер С**
 
@@ -64,11 +64,11 @@ scp {имя сервера}@{ip-адрес сервера}:{расположен
 scp {расположение файла на компьютере А} {имя сервера С}@{ip-сервера С}:{путь куда хотим копировать на компьютере С}
 ```
 
-![Копирование файла на сервер С](https://github.com/verkalacheva/vukha_devops_lab_1/assets/113009175/f566beb8-8058-47e7-8007-76ad6716ab8b)
+<image src="/images/8.jpeg" alt="Компьютер A">
 
 Проверим, что на компьютере С появился отправленный файл dog.txt.
 
-![Файл dog.txt на компьютере С](https://github.com/verkalacheva/vukha_devops_lab_1/assets/113009175/280b2b2d-4328-4cef-bd22-0f84dc594e71)
+<image src="/images/9.jpeg" alt="Компьютер C">
 
 
 В домашней папке компьютера С есть файл dog.txt. Нам успешно удалось перенести его с компьютера Б на компьютер С через компьютер А.
