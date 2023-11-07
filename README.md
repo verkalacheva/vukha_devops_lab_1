@@ -38,7 +38,7 @@ ip a
 ```
 - **Компьютер C**
 
-<image src="/images/10.png" alt="Компьютер C">
+<image src="/images/10.jpeg" alt="Компьютер C">
 
 ### 2. Перенос файла между серверами
 - **Файл dog.txt**
@@ -54,7 +54,7 @@ ip a
 ssh {username}@{address}
 ```
 
-<image src="/images/11.jpeg" alt="Компьютер A">
+<image src="/images/11.png" alt="Компьютер A">
 
 В терминале компьютера А вводим команду для передачи файла с компьютера В на компьютер С:
 
@@ -62,7 +62,7 @@ ssh {username}@{address}
 sudo scp {host_1}@{address_1}:{path_to file} {host_2}@{address_2}:{path_to_file}
 ```
 
-<image src="/images/12.jpeg" alt="Компьютер A">
+<image src="/images/12.png" alt="Компьютер A">
 
 Проверим, что на компьютере С появился отправленный файл dog.txt.
 
