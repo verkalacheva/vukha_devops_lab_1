@@ -36,7 +36,7 @@ sudo ufw disable
 ```
 ip a
 ```
-- **Компьютер C**
+- **Компьютер B**
 
 <image src="/images/10.jpeg" alt="Компьютер C">
 
